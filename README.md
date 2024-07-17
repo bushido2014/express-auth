@@ -32,7 +32,7 @@ express-auth is a demo application that illustrates how to implement an authenti
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/username/express-auth.git
+    git clone https://github.com/bushido2014/express-auth.git
     cd express-auth
     ```
 
