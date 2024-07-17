@@ -1,0 +1,36 @@
+<div class="container py-5">
+  
+  <div class="row justify-content-center">
+    <div class="col-md-5 col-sm-12 card my-5 p-4">
+
+      <% if (errors && errors.length > 0) { %>
+        <div class="alert alert-danger" id="error-alert">
+          <% errors.forEach(error => { %>
+            <p><%= error.msg %></p>
+          <% }) %>
+        </div>
+      <% } %>
+
+    <form action="/login" method="post">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="username" name="username"  placeholder="Enter Your Name" autocomplete="off">
+        
+      </div>
+     
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Your Password">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+      <div class="form-text py-3">
+       Don't have account? <a href="/signup">Sing up</a>
+      </div>
+
+
+        
+    </div>
+  </div>
+</div>

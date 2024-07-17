@@ -1,0 +1,36 @@
+<header class="header">
+  <nav class="navbar bg-primary  navbar-expand-lg py-2 fixed-top" aria-label="Main">
+    <div class="container">
+      <a class="navbar-brand d-inline-flex" href="/"> Home</a>
+      <button class="navbar-toggler" type="button" 
+
+        data-bs-toggle="offcanvas" data-bs-target="#exp-nav"
+         aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+
+        <i class="bi bi-justify"></i>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase" id="navbar">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <% if (typeof user !== 'undefined') { %>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+          <% } else { %>
+            <li class="nav-item">
+              <a href="/login" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Signup</a>
+            </li>
+          <% } %>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+</header>

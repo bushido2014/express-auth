@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= locals.title %></title>
+    <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="<%= locals.description %>">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+   <link href="/css/main.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="offcanvas offcanvas-end" id="exp-nav">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Express JS</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/login"  class="nav-link" >Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">SignUp</a>
+            </li>
+           
+            </ul>
+      </div>
+    </div>
+
+    
+    <%- include('../partials/header.ejs') %>
+
+
+  <div class="container mt-3">
+    <div class="row">
+
+
+
+      <%- body %>
+
+
+    </div>
+
+  </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const alertBox = document.getElementById("error-alert");
+          if (alertBox) {
+            setTimeout(() => {
+              alertBox.style.display = "none";
+            }, 4000); // 4000ms = 4 seconds
+          }
+        });
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
