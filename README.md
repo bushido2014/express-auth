@@ -1,11 +1,11 @@
 # express-auth
 
-express-auth is a simple authentication application using Express.js, JWT, and MongoDB. It provides login functionality and route protection in a web application.
+express-auth is a simple authentication application using Express.js, JWT, and MongoDB. It provides login functionality and route protection in a web application
 
 
 ## Description
 
-express-auth is a demo application that illustrates how to implement an authentication system using Express.js, JWT, and MongoDB. The project includes examples of protected routes and user session management.
+express-auth is a demo application that illustrates how to implement an authentication system using Express.js, JWT, and MongoDB. The project includes examples of protected routes and user session management
 
 ## Features
 
@@ -36,6 +36,7 @@ express-auth is a demo application that illustrates how to implement an authenti
     cd express-auth
     ```
 
+
 2. Install dependencies:
     ```bash
     npm install
@@ -45,4 +46,4 @@ express-auth is a demo application that illustrates how to implement an authenti
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-   
+
